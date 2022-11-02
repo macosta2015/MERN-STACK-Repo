@@ -1,30 +1,30 @@
 import { useState } from 'react'
 
 const Login = () => {
-    const [email, sentEmail] = useState(' ')
-    const [password, setPassword] = useState(' ')
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-
+    
         console.log(email, password)
     }
 
     return (
-        <form className="Login" onSubmit={handleSubmit}>
-            <h3>Login</h3>
+        <form className="login" onSubmit={handleSubmit}>
+            <h3>Log In</h3>
 
-            <label>Email: </label>
+            <label>Email address:</label>
             <input 
                 type="email"
-                onChange={(e) => sentEmail(e.target.value)}
+                onChange={(e) => setEmail(e.target.value)}
                 value={email}
             />
             <label>Password: </label>
             <input 
-                type="email"
+                type="password"
                 onChange={(e) => setPassword(e.target.value)}
-                value={email}
+                value={password}
             />
 
             <button>Log in</button>

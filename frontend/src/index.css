@@ -115,7 +115,7 @@ form.signup, form.login {
   max-width: 400px;
   margin: 40px auto;
   padding: 20px;
-  background: rgb(200, 200, 200);
+  background: rgba(200, 200, 200, 0.459);
   border-radius: 4px;
 }
 
