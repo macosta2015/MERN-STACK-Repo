@@ -31,3 +31,13 @@ mongoose.connect( process.env.MONG_URI)
   .catch((error) => {
     console.log(error)
   })
+
+  //USERS
+
+    //user: paloma2016@my.fit.edu
+    //password: ABCabc123$
+
+    //user: mario2025@gmail.com
+    //password: ElonMusk2050!@
+
+  
